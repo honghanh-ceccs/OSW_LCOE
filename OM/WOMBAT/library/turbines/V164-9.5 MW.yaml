@@ -1,0 +1,149 @@
+capacity_kw: 9500
+capex_kw: 1300
+power_curve:
+  file: V164-9.5 MW.csv
+  bin_width: 0.5
+blade:
+  name: blade
+  maintenance:
+  - description: annual blade inspection
+    time: 8
+    materials: 1235
+    service_equipment: CTV
+    frequency: 365
+  failures:
+  - scale: 20
+    shape: 1
+    time: 10
+    materials: 6175
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: blade minor repair
+  - scale: 50
+    shape: 1
+    time: 30
+    materials: 24700
+    service_equipment: SCN
+    operation_reduction: 0
+    level: 4
+    description: blade major repair
+pitch_system:
+  name: pitch_system
+  maintenance:
+  - description: annual pitch service
+    time: 6
+    materials: 2470
+    service_equipment: CTV
+    frequency: 365
+  failures:
+  - scale: 0.886
+    shape: 1
+    time: 8
+    materials: 3704
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: pitch actuator repair
+  - scale: 2.658
+    shape: 1
+    time: 18
+    materials: 12350
+    service_equipment: SCN
+    operation_reduction: 0
+    level: 3
+    description: pitch system major repair
+yaw_system:
+  name: yaw_system
+  maintenance:
+  - description: annual yaw service
+    time: 5
+    materials: 1852
+    service_equipment: CTV
+    frequency: 365
+  failures:
+  - scale: 6
+    shape: 1
+    time: 7
+    materials: 3087
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: yaw drive repair
+drivetrain:
+  name: drivetrain
+  maintenance:
+  - description: annual drivetrain inspection
+    time: 10
+    materials: 4940
+    service_equipment: CTV
+    frequency: 365
+  failures:
+  - scale: 5.53
+    shape: 1
+    time: 16
+    materials: 12350
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 3
+    description: drivetrain minor repair
+  - scale: 17.28
+    shape: 1
+    time: 40
+    materials: 61750
+    service_equipment: SCN
+    operation_reduction: 0
+    level: 4
+    description: drivetrain major repair
+  - scale: 27.648
+    shape: 1
+    time: 72
+    materials: 123500
+    service_equipment: LCN
+    operation_reduction: 0
+    replacement: true
+    level: 5
+    description: drivetrain replacement
+generator:
+  name: generator
+  maintenance:
+  - description: annual generator inspection
+    time: 8
+    materials: 3704
+    service_equipment: CTV
+    frequency: 365
+  failures:
+  - scale: 16.455
+    shape: 1
+    time: 14
+    materials: 9880
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 3
+    description: generator repair
+  - scale: 49.366
+    shape: 1
+    time: 48
+    materials: 86450
+    service_equipment: LCN
+    operation_reduction: 0
+    replacement: true
+    level: 5
+    description: generator replacement
+converter:
+  name: converter
+  maintenance:
+  - description: annual converter inspection
+    time: 4
+    materials: 1235
+    service_equipment: CTV
+    frequency: 365
+  failures:
+  - scale: 5.577
+    shape: 1
+    time: 6
+    materials: 4940
+    service_equipment: CTV
+    operation_reduction: 0
+    level: 2
+    description: converter repair

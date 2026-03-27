@@ -1,0 +1,17 @@
+name: SG 14-236 DD_base
+weather: weather.csv
+service_equipment:
+- ctv.yaml
+- cab.yaml
+- hlv.yaml
+- dsv.yaml
+layout: layout_SG 14-236 DD.csv
+inflation_rate: 0
+fixed_costs: fixed_costs.yaml
+workday_start: 7
+workday_end: 19
+start_year: 2002
+end_year: 2021
+site_distance: 116
+port: base_port.yaml
+project_capacity: 798.0
