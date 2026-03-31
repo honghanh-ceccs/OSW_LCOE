@@ -176,7 +176,7 @@ configs = [f.name for f in Path("library/project/config").iterdir() if f.is_file
 
 start_time = time()
 counter = 0 
-n_workers = cpu_count() - 1 
+n_workers = 18
 print(f"Using {n_workers} processes for parallel execution")
 print(f"Starting simulations at {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
