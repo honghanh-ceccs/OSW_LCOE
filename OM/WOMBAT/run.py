@@ -19,7 +19,7 @@ pd.set_option("display.max_rows", 1000)
 pd.set_option("display.max_columns", 1000)
 
 
-N_RUNS = 30
+N_RUNS = 2
 RANDOM_SEEDS = list(range(1, N_RUNS + 1))
 
 
@@ -170,8 +170,8 @@ def run_windfarm_simulations(config_name, random_seeds: list):
     
     
 
-configs = [f.name for f in Path("library/project/config").iterdir() if f.is_file() if f.name != "fixed_costs.yaml"]
-
+#configs = [f.name for f in Path("library/project/config").iterdir() if f.is_file() if f.name != "fixed_costs.yaml"]
+configs = ["IEA 15 MW Reference_base.yaml"] 
 
 
 start_time = time()
@@ -197,4 +197,3 @@ print(f"\nCompleted {counter}/{len(configs)} configurations")
 print(f"Total time: {elapsed_seconds} seconds")
 if counter > 0:
     print(f"Average time per config: {elapsed_seconds/counter:.0f} seconds")
-

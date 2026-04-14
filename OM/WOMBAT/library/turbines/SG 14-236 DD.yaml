@@ -16,7 +16,8 @@ blade:
     shape: 1
     time: 10
     materials: 9100
-    service_equipment: CTV
+    service_equipment:
+    - CTV
     operation_reduction: 0
     level: 2
     description: blade minor repair
@@ -24,10 +25,21 @@ blade:
     shape: 1
     time: 30
     materials: 36400
-    service_equipment: SCN
+    service_equipment:
+    - SCN
     operation_reduction: 0
     level: 4
     description: blade major repair
+  - scale: 200.0
+    shape: 1
+    time: 120
+    materials: 364000
+    service_equipment:
+    - CTV
+    operation_reduction: 1.0
+    replacement: true
+    level: 5
+    description: blade typhoon replacement
 pitch_system:
   name: pitch_system
   maintenance:
@@ -41,7 +53,8 @@ pitch_system:
     shape: 1
     time: 8
     materials: 5459
-    service_equipment: CTV
+    service_equipment:
+    - CTV
     operation_reduction: 0
     level: 2
     description: pitch actuator repair
@@ -49,7 +62,8 @@ pitch_system:
     shape: 1
     time: 18
     materials: 18200
-    service_equipment: SCN
+    service_equipment:
+    - SCN
     operation_reduction: 0
     level: 3
     description: pitch system major repair
@@ -66,7 +80,8 @@ yaw_system:
     shape: 1
     time: 7
     materials: 4550
-    service_equipment: CTV
+    service_equipment:
+    - CTV
     operation_reduction: 0
     level: 2
     description: yaw drive repair
@@ -83,7 +98,8 @@ drivetrain:
     shape: 1
     time: 16
     materials: 18200
-    service_equipment: CTV
+    service_equipment:
+    - CTV
     operation_reduction: 0
     level: 3
     description: drivetrain minor repair
@@ -91,7 +107,8 @@ drivetrain:
     shape: 1
     time: 40
     materials: 91000
-    service_equipment: SCN
+    service_equipment:
+    - SCN
     operation_reduction: 0
     level: 4
     description: drivetrain major repair
@@ -99,7 +116,8 @@ drivetrain:
     shape: 1
     time: 72
     materials: 182000
-    service_equipment: LCN
+    service_equipment:
+    - LCN
     operation_reduction: 0
     replacement: true
     level: 5
@@ -117,7 +135,8 @@ generator:
     shape: 1
     time: 14
     materials: 14560
-    service_equipment: CTV
+    service_equipment:
+    - CTV
     operation_reduction: 0
     level: 3
     description: generator repair
@@ -125,7 +144,8 @@ generator:
     shape: 1
     time: 48
     materials: 127400
-    service_equipment: LCN
+    service_equipment:
+    - LCN
     operation_reduction: 0
     replacement: true
     level: 5
@@ -143,7 +163,8 @@ converter:
     shape: 1
     time: 6
     materials: 7280
-    service_equipment: CTV
+    service_equipment:
+    - CTV
     operation_reduction: 0
     level: 2
     description: converter repair
